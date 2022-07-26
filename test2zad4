@@ -1,0 +1,11 @@
+1. za namirane na broq na failovete v direktroq home
+find /home -name *.h > zad.txt && wc -l zad.txt
+2.za namirane na main v direktoqta 
+find ~/ -name "*" -exec grep -e -c {} /
+3.za namirane na validnite telefonni nomera
+   1. greb -e [359,0]8[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]
+za brebroqvane na nevalidnite telefonni nomera
+   2. greb -e -v -c [359,0]8[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]
+za vyvejdane na validnite telefonni nomera v phones.vivacom.data
+   3.greb -e [359,0]8[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]>phones.vivacom.data
+
